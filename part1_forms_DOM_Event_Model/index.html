@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice with Forms and the DOM Event Model - Assignment 5 part 1 </title>
+    
+<!-- STEP 5 -->
+<script> 
+window.addEventListener("load", myFunction, false);
+function myFunction () {
+ "use strict";
+  myBtn5.addEventListener("click", writeMessage5, false);
+}
+  function writeMessage5 (){
+      window.alert("'Click Me 5' has been clicked.");
+}   
+</script>
+
+</head>
+<body>
+<h1>COMM644 Assignment 5 Practice with Forms and the DOM Event Model steps 1- 10</h1>
+<!-- STEP 1 -->
+<p>Step 1</p>
+<button onclick="writeMessage1()">Click Me</button>
+
+<!--  STEP 2 --> 
+<p>Step 2</p> 
+<button id="myBtn2">Click Me 2</button>
+ 
+<!--  STEP 3 --> 
+<p>Step 2</p>
+<button id="myBtn3">Click Me 3</button>
+
+<!-- STEP 4 -->
+<p>Step 4</p>
+<button id="myBtn4">Click Me 4</button>
+
+<!-- STEP 5 -->
+<p>Step 5</p>
+<button id="myBtn5">Click Me 5</button>
+
+<!-- STEP 6 -->
+<p>Step 6</p>
+<a href="https://www.google.com/" id="redirect">Visit Google</a>
+
+<!-- STEP 7 -->
+<p>Step 7</p>
+<form>
+<textarea id="message"></textarea>
+<br>
+<button id="myBtn7">Display Text in Alert Window</button>
+</form>
+
+<!-- STEP 8 -->
+<br>
+<p>Step 8</p>
+<button id="myBtn8">Go To New Page</button>
+<br>
+<!-- STEP 9 -->
+<p>Step 9</p>
+
+<button id="myStartBtn">Start</button>
+<button id="myStopBtn">Stop</button>
+<br>
+
+<!-- STEP 10 -->
+
+<p>Step 10</p>
+<select id="list">
+  <option value="choose">choose</option>
+  <option value="blue">blue</option>
+  <option value="red">red</option>
+  <option value="yellow">yellow</option>
+</select>
+<button id="myBtn10">Select</button>
+
+<script src="script.js"></script>
+</body>
+</html>

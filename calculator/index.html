@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 5, Part 2 - Calculator</title>
+<script>
+//The Calculator II (20 points)
+
+//STEP 1-7 - long version
+
+function init() {
+function enter(val) {
+       result.value += val.target.value;   
+    }
+function calculate (){
+   result.value = eval(result.value);
+        
+}  
+    seven.addEventListener("click", enter, false); 
+    eight.addEventListener("click", enter, false);
+    nine.addEventListener("click", enter, false);
+    divide.addEventListener("click", enter, false);
+    four.addEventListener("click", enter, false);
+    five.addEventListener("click", enter, false);
+    six.addEventListener("click", enter, false);
+    multiply.addEventListener("click", enter, false);
+    one.addEventListener("click", enter, false);
+    two.addEventListener("click", enter, false);
+    three.addEventListener("click", enter, false);
+    subtract.addEventListener("click", enter, false);
+    zero.addEventListener("click", enter, false);
+    period.addEventListener("click", enter, false);
+    add.addEventListener("click", enter, false);
+equal.addEventListener("click", calculate, false);    
+};
+window.addEventListener("load", init, false);
+
+    
+//STEP 8 - short version
+//use bubbling, add myCalculator div, if else to calculate
+
+function init() {
+function calculate(val) {
+        val = val.target.value;
+        if (val === "=") {
+            result.value = eval(result.value);
+        } else {
+            result.value += val;
+        }
+    }
+ myCalculator.addEventListener("click", calculate, false);
+};
+window.addEventListener("load", init, false);
+
+
+</script>
+</head>
+
+<body>
+<div id="myCalculator">
+	<input type="text" readonly id="result">
+    <br>
+    <input type="button" id="seven" value="7">
+    <input type="button" id="eight" value="8">
+    <input type="button" id="nine" value="9">
+    <input type="button" id="divide" value="/">
+    <br>
+    <input type="button" id="four" value="4">
+    <input type="button" id="five" value="5">
+    <input type="button" id="six" value="6">
+    <input type="button" id="multiply" value="*">
+    <br>
+    <input type="button" id="one" value="1">
+    <input type="button" id="two" value="2">
+    <input type="button" id="three" value="3">
+    <input type="button" id="subtract" value="-">
+    <br>
+    <input type="button" id="zero" value="0">
+    <input type="button" id="period" value=".">
+    <input type="button" id="add" value="+">
+    <input type="button" id="equal" value="=">
+    </div>
+</body>
+</html>
